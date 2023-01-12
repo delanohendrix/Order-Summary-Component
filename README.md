@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution]((https://www.frontendmentor.io/solutions/order-summary-component-g1SPiRrd4i)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/order-summary-component-g1SPiRrd4i)
 - Live Site URL: [GitHub Pages](https://delanohendrix.github.io/Order-Summary-Component/)
 
 ## My process
