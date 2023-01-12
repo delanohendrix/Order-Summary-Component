@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
+  --active: #766cf1;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  margin: 0 auto;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--pale-blue);
+}
+.container {
+  max-width: 450px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin: 15px;
+  box-shadow: 0px 10px 45px var(--desaturated-blue);
+}
+.top-img {
+  width: 100%;
+}
+.card-info {
+  margin: 30px;
+  font-size: 16px;
+}
+.card-info h1 {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+.card-info p {
+  color: var(--desaturated-blue);
+  margin-bottom: 25px;
+}
+.order-container {
+  background-color: var(--very-pale-blue);
+  padding: 12.5px;
+  border-radius: 15px;
+}
+.order-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 7.5px;
+}
+.product-icon {
+  float: left;
+  width: 22.5%;
+  padding-right: 20px;
+}
+.product-icon img {
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+}
+.product-info {
+  float: left;
+  width: 65%;
+}
+.product-info h3,
+.product-info p {
+  margin: 0;
+  text-align: left;
+}
+.product-info h3 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 16px;
+}
+.product-info p {
+  margin-top: 5px;
+}
+.product-change {
+  float: left;
+  width: 23.5%;
+  color: var(--bright-blue);
+  font-weight: 900;
+}
+.product-change a:hover {
+  color: var(--active);
+  text-decoration: none;
+}
+.card-info button {
+  display: block;
+  width: 100%;
+  background: var(--bright-blue);
+  color: white;
+  font-weight: 900;
+  margin: 25px auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 20px 15px var(--pale-blue);
+}
+.card-info button:hover {
+  background: var(--active);
+}
+.card-info a.cancel-btn {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.card-info a.cancel-btn:hover {
+  color: var(--dark-blue);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+  .container {
+    max-width: 350px;
+  }
+  .card-info {
+    margin: 23px;
+  }
+  .card-info h1 {
+    font-size: 24px;
+  }
+  .card-info p {
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 30px;
+  }
+  .order-container {
+    padding: 14px 12px;
+  }
+  .order-info {
+    padding: 0px;
+  }
+  .product-icon {
+    padding-right: 15px;
+  }
+  .product-info {
+    float: left;
+    width: 62.5%;
+  }
+  .product-info h3 {
+    margin-top: 7.5px;
+  }
+  .product-info p {
+    margin-top: 0px;
+  }
+  .product-change {
+    width: 25%;
+  }
+}
